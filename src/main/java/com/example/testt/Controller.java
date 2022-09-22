@@ -11,7 +11,7 @@ public class Controller {
 
     @GetMapping
     public String hellow(){
-        return "hellow";
+        return "hellow2";
     }
 
 }
