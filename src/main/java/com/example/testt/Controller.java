@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class Controller {
 
-    private final MemberRepository memberRepository;
+    private final MemberService memberService;
     @GetMapping
     public String hellow(){
         return "hellow332333";
@@ -18,7 +18,7 @@ public class Controller {
 
     @PostMapping("/test")
     public ResponseEntity test(@RequestBody Member member){
-        memberRepository.save(member);
+  memberService.memberCreate(member);
 return new ResponseEntity<>("등록완료", HttpStatus.OK);
     }
 
