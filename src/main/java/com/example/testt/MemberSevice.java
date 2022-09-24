@@ -15,4 +15,7 @@ public class MemberSevice {
     public void createMember(Member member){
         memberRepository.save(member);
     }
+
+
+
 }
