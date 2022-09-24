@@ -17,7 +17,7 @@
     console:
       enabled: true
       path: /h2
-  mvc:
+    mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
 
